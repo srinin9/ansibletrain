@@ -2,11 +2,11 @@
 ---
 -
 
-  hosts: webserver
+  hosts: database
   tasks:
     - name: configure a motd
       copy:
-        src: webserver_motd
+        src: database_motd
         dest: /etc/motd 
 
 # last line of yaml file
