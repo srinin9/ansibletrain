@@ -1,19 +1,16 @@
 #second yaml file to declare variables
 ---
 -
-
-hosts: all
 vars: 
   example_key_1: this is string # key and value in yaml
-  example_key_2: this is second string # 
+  example_key_2: this is second string # second string 
 
-- tasks:
-    - name: print vars value
+tasks:
+  - name: print vars value
+     debug:
+       msg: "{{ example_key_1 }}"
+  - name: print second value
       debug:
-        msg "{{ example_key_1 }}"
-    
-    - name: print second value
-      debug:
-        msg "{{ example_key_2 }}"
+        msg: "{{ example_key_2 }}"
 
 ...
