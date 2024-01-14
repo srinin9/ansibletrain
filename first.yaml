@@ -1,5 +1,7 @@
 # first yaml file
 ---
+-
+
 hosts: webserver
 tasks:
   - name: configure a motd
