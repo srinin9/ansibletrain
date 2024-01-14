@@ -1,0 +1,22 @@
+#Every YAML File should start with three dashes
+---
+no_quotes: this is a string example
+double_quotes: "this is a string example"
+single_quotes: 'this is a string example'
+
+
+#false, False, FALSE, no, No, NO, off, Off, OFF
+#true, True, TRUE, yes, Yes, YES, on, On, ON
+
+#n,b, n does not equal false, y does not equal true
+
+is_false_01: False
+is_false_02: false
+is_false_03: FALSE
+is_true_01: true
+is_true_02: yes
+is_true_03: on 
+
+
+#Every YAML file should with the three dots
+...
