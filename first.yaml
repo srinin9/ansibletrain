@@ -2,12 +2,12 @@
 ---
 -
 
-hosts: webserver
-tasks:
-  - name: configure a motd
-    copy:
-      src: webserver_motd
-      dest: /etc/motd 
+  hosts: webserver
+  tasks:
+    - name: configure a motd
+      copy:
+        src: webserver_motd
+        dest: /etc/motd 
 
 # last line of yaml file
 ...
