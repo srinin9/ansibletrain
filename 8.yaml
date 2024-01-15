@@ -2,7 +2,7 @@
 ---
 -
   hosts: database
-  gather_faccts: False
+  gather_facts: False
   vars:
     inline_dict:
       { inline_dick_key: this is an dictionary value }
