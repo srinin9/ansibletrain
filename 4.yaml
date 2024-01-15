@@ -1,0 +1,12 @@
+---
+-
+  hosts: webserver
+  gather_facts: False
+  vars:
+    motd: "Welcome to Webserver - Hi Ansible\n\n\n"
+  tasks:
+    - name: configure motd through var motd
+      copy:
+        content: " {{ motd }}"
+        dest: /etc/motd
+...
