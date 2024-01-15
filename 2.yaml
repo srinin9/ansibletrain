@@ -11,7 +11,7 @@
     debug:
       msg: "{{ example_key_1 }}"
   - name: print second value
-     debug:
+    debug:
        msg: "{{ example_key_2 }}"
 
 ...
