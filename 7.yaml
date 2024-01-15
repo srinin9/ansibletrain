@@ -3,8 +3,8 @@
   hosts: webserver
   gather_facts: False
   vars:
-   dict:
-    dict_key: This is a dictionary value
+    dict:
+      dict_key: This is a dictionary value
   tasks:
     - name: Test named dictionary
       debug: 
