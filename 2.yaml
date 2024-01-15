@@ -2,6 +2,7 @@
 ---
 -
   hosts: webserver
+  gather_facts: False
   vars: 
     example_key_1: this is string 
     example_key_2: this is second string
