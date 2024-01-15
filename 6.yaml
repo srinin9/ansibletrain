@@ -10,7 +10,7 @@
   tasks:
     - name: configure a MOTD for webserver
       copy:
-        content: {{ web_motd }}
+        content: "{{ web_motd }}"
         dest: /etc/motd
       notify: MOTD changed
       when: ansible_distrubution == "Redhat"
