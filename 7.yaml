@@ -1,18 +1,18 @@
 ---
 -
-hosts: webserver
-gather_facts: False
-vars:
-  dict:
+  hosts: webserver
+  gather_facts: False
+  vars:
+   dict:
     dict_key: This is a dictionary value
-tasks:
-  - name: Test named dictionary
-    debug: 
-      msg: "{{dict}}"
-  - name: Test named dictionary dictionary
-    debug:
-      msg: "{{dict.dict_key}}"
-  -name: Test name dictionary dictionary
-   debug:
-     msg: "{{dict['dict_key']}}"
+  tasks:
+    - name: Test named dictionary
+      debug: 
+        msg: "{{dict}}"
+    - name: Test named dictionary dictionary
+      debug:
+        msg: "{{dict.dict_key}}"
+    -name: Test name dictionary dictionary
+     debug:
+        msg: "{{dict['dict_key']}}"
 ...
