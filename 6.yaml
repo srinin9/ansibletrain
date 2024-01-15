@@ -3,6 +3,7 @@
   hosts: 
     webserver
     database
+  gatherfacts: True
   vars:
     web_motd = "welcome to web motd"
     db_motd = " Welcome to DB motd"
