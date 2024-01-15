@@ -4,7 +4,7 @@
   gather_facts: False
 
   vars:
-    motd: "Welcome to webserver server - Ansible Rocks - modified"
+    motd: "Welcome to webserver server - Ansible Rocks - modified - updated"
   tasks:
     - name: configure a mot
       copy:
