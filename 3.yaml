@@ -2,11 +2,11 @@
 -
   hosts: webserver
   tasks:
-    - name: "add motd content using content line"
+    - name: add motd content using content line
       copy:
         content: welcome to webserver servers - Ansible Rocks
         dest: /etc/motd
-    - name: "configure hostname"
+    - name: configure hostname
       ios_config:
         lines: hostname{{ hostname.name }}
 ...
