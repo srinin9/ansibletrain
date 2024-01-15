@@ -1,0 +1,20 @@
+---
+-
+  hosts: 
+    webserver
+    database
+  vars:
+    web_motd = "welcome to web motd"
+    db_motd = " Welcome to DB motd"
+  tasks:
+    - name: " configure a MOTD for webserver
+      copy:
+        content: "{{ web_motd }}"
+        dest: /etc/motd
+      notify: MOTD changed
+      when: ansible_distrubution == "Redhat"
+  handlers:
+    - name: MOTD changed
+      debug:
+        msg: This MOTD was changed
+...
