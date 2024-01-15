@@ -9,6 +9,6 @@
         dest: /etc/motd
    
     - name: "configure hostname"
-      ansible.bultin.hostname:
+      ansible.builtin.hostname:
         name: "{{ new_hostname }}"
 ...
