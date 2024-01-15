@@ -7,9 +7,9 @@
       copy:
         content: welcome to webserver servers - Ansible Rocks
         dest: /etc/motd
-    -name: " testing hostvars"
-     debug: 
-       msg: "{{ hostvars[new_hostname].name }}"
+    - name: " testing hostvars"
+      debug: 
+        msg: "{{ hostvars[new_hostname].name }}"
     - name: "configure hostname"
       ansible.builtin.hostname:
         name: "{{ hostvars[new_hostname].name }}"
