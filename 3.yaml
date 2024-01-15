@@ -3,7 +3,7 @@
   hosts: webserver
   tasks:
     - name: "add motd content using content line"
-      copy"
+      copy:
         content: welcome to webserver servers - Ansible Rocks
         dest: /etc/motd
 
