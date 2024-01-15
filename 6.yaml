@@ -8,7 +8,7 @@
     web_motd = "welcome to web motd"
     db_motd = " Welcome to DB motd"
   tasks:
-    - name: " configure a MOTD for webserver
+    - name: configure a MOTD for webserver
       copy:
         content: {{ web_motd }}
         dest: /etc/motd
