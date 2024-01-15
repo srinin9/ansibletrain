@@ -5,15 +5,15 @@
     database
   gather_facts: True
   vars:
-    web_motd: "welcome to web motd"
-    db_motd:  " Welcome to DB motd"
+    web_motd: "welcome to web motd1"
+    db_motd:  " Welcome to DB motd1"
   tasks:
     - name: configure a MOTD for webserver
       copy:
         content: "{{ web_motd }}"
         dest: /etc/motd
       notify: MOTD changed
-      when: ansible_distribution == "Redhat"
+      when: ansible_distribution == "RedHat"
   handlers:
     - name: MOTD changed
       debug:
