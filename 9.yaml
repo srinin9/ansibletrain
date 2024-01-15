@@ -17,5 +17,5 @@
        msg: "{{ named_lists.0 }}"
    - name: Test name list itemm method2
      debug:
-       msg: "{{ named_list[0] }}"
+       msg: "{{ named_lists[0] }}"
 ...
