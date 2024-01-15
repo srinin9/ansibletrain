@@ -8,7 +8,7 @@
         content: welcome to webserver servers - Ansible Rocks
         dest: /etc/motd
    
-    - name: configure name
-      ios_config:
-        lines: hostname{{ hostname.name }}
+    - name: "configure hostname"
+      hostname:
+        name: hostname{{ hostname.name }}
 ...
