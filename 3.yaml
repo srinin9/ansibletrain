@@ -10,5 +10,5 @@
    
     - name: "configure hostname"
       hostname:
-        name: hostname{{ hostname.name }}
+        name: "{{ hostvars[ansible_hostname] }}"
 ...
