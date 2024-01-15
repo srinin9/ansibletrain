@@ -4,14 +4,15 @@
   gather_facts: False
 
   vars:
-    motd: "Welcome to webserver server - Ansible Rocks - modified - updated"
+    motd: "Welcome to webserver server - Ansible Rocks - modified - updated - handler should use motify"
   tasks:
     - name: configure a mot
       copy:
         content: "{{ motd }}"
         dest: /etc/motd
+        notify: MOTD changed
   handlers:
     - name: MOTD changed
       debug:
-        msg: Thsi MOTD was changed 
+        msg: This MOTD was changed 
 ...
