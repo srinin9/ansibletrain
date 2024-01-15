@@ -1,3 +1,4 @@
 ---
-hostname: webserver1
+hostname: 
+  name: webserver1
 ...
