@@ -16,11 +16,11 @@
        msg: "{{ external_dict['dict_key'] }}"
    - name: test external inline dictionary 
      debug:
-       msg: "{{ external_inline_dict }}"
+       msg: "{{ external_named_list }}"
    - name: external inline dictionary key value
      debug:
-       msg: "{{ external_inline_dict.dict_key }}"
+       msg: "{{ external_inline_named_list }}"
    - name: external inline dictionary key value
      debug:
-       msg: "{{ external_line_dict['dict_key']}}"
+       msg: "{{ external_inline_named_list['dict_key']}}"
 ...
