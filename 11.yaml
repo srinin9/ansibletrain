@@ -2,7 +2,7 @@
 -
  hosts: webserver
  gather_facts: False
- var_files: 
+ vars_files: 
    - external_vars.yaml
  tasks:
    - name: Test external dictionary key value
