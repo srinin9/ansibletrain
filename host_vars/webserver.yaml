@@ -1,3 +1,4 @@
 ---
-new_hostname: webserver1
+new_hostname:
+  name: webserver1
 ...
