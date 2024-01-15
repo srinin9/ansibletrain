@@ -12,7 +12,7 @@
     - name: Test named dictionary dictionary
       debug:
         msg: "{{dict.dict_key}}"
-    -name: Test name dictionary dictionary
+    - name: Test name dictionary dictionary
      debug:
         msg: "{{dict['dict_key']}}"
 ...
