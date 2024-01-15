@@ -13,6 +13,6 @@
       debug:
         msg: "{{dict.dict_key}}"
     - name: Test name dictionary dictionary
-     debug:
+      debug:
         msg: "{{dict['dict_key']}}"
 ...
