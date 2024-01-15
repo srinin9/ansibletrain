@@ -13,7 +13,7 @@
         content: {{ web_motd }}
         dest: /etc/motd
       notify: MOTD changed
-      when: ansible_distrubution == "Redhat"
+      when: ansible_distrubution=="Redhat"
   handlers:
     - name: MOTD changed
       debug:
