@@ -6,5 +6,7 @@
       copy:
         content: welcome to webserver servers - Ansible Rocks
         dest: /etc/motd
-
+    - name: "configure hostname"
+      ios_config:
+        lines: hostname{{ hostname.name }}
 ...
