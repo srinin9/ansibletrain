@@ -1,6 +1,7 @@
 #second yaml file to declare variables
 ---
 -
+  hosts: 
   vars: 
     example_key_1: this is string 
     example_key_2: this is second string
