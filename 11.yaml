@@ -1,0 +1,26 @@
+---
+-
+ hosts: webserver
+ gather_facts: False
+ var_files: 
+   - external_vars.yaml
+ tasks:
+   - name: Test external dictionary key value
+     debug: 
+       msg: "{{ external_example_key }}"
+   - name: test external named dictionary dictionary key value with dictionary dot notation"
+     debug:
+       msg: "{{ external_dict.dict_key }}"
+   - name: test external dictionary key value with barckets notation
+     debug:
+       msg: "{{ external_dict['dict_key'] }}"
+   - name: test external inline dictionary 
+     debug:
+       msg: "{{ external_inline_dict }}"
+   - name: external inline dictionary key value
+     debug:
+       msg: "{{ external_inline_dict.dict_key }}"
+   - name: external inline dictionary key value
+     debug:
+       msg: "{{ external_line_dict['dict_key']}}"
+...
