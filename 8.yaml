@@ -1,0 +1,20 @@
+#inline dictionary decleration
+---
+-
+  hosts: database
+  gather_faccts: False
+  vars:
+    inline_dict:
+      { inline_dick_key: this is an dictionary value }
+  tasks:
+    - name: Test named inline dictionary dictionary
+      debug:
+        msg: "{{ inline_dict }}"
+    - name: inline dictionary key value method 1
+      debug:
+        msg: "{{inline_dict.inline_dick_key}}"
+    - name:
+      debug:
+        msg: "{{ inline_dict ['inline_dick_key']}}"
+...
+  
