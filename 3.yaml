@@ -12,5 +12,5 @@
         msg: "{{ hostvars[new_hostname].name }}"
     - name: "configure hostname"
       ansible.builtin.hostname:
-        name: "{{ hostvars[new_hostname].name }}"
+        name: "{{ hostvars.name }}"
 ...
