@@ -1,0 +1,13 @@
+---
+-
+  hosts: webserver
+  gather_facts: False
+  vars_prompt:
+    - name: password
+      private: True
+  tasks: 
+   - name: Test vars_prompt
+     debug:
+       msg: "{{ password }}"
+...
+      
