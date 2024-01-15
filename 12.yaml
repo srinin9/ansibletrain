@@ -1,12 +1,12 @@
 ---
 -
- hosts: webserver
- gather_facts: False
- vars_prompt:
-   - name: username
-     private: False
- tasks:
-   - name: Test vars_promt
+  hosts: webserver
+  gather_facts: False
+  vars_prompt:
+    - name: username
+      private: False
+  tasks:
+    - name: Test vars_promt
       debug:
         msg: "{{ username }}"
 ...
