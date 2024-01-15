@@ -1,0 +1,18 @@
+---
+-
+  hosts: webserver
+  gather_facts: False
+
+  vars:
+    motd: "Welcome to webserver server - Ansible Rocks"
+  tasks:
+    - name: configure a mot
+      copy:
+        content: "{{ motd }}"
+        dest: /etc/motd
+
+  handlers:
+    - name: MOTD changed
+      debug:
+        msg: Thsi MOTD was changed 
+...
