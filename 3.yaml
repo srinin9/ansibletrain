@@ -9,7 +9,7 @@
         dest: /etc/motd
     - name: " testing hostvars"
       debug: 
-        msg: "{{ hostvars[new_hostname].name }}"
+        msg: "{{ hostvars.name }}"
     - name: "configure hostname"
       ansible.builtin.hostname:
         name: "{{ hostvars.name }}"
