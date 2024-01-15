@@ -5,8 +5,8 @@
     database
   gather_facts: True
   vars:
-    web_motd = "welcome to web motd"
-    db_motd = " Welcome to DB motd"
+    web_motd: "welcome to web motd"
+    db_motd:  " Welcome to DB motd"
   tasks:
     - name: configure a MOTD for webserver
       copy:
