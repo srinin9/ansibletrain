@@ -22,5 +22,5 @@
        msg: "{{ external_inline_named_list }}"
    - name: external inline dictionary key value
      debug:
-       msg: "{{ external_inline_named_list['dict_key']}}"
+       msg: "{{ external_inline_named_list.0 }}"
 ...
