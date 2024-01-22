@@ -1,7 +1,7 @@
 ---
-hosts: all
-tasks: 
-  - name: show ip address
-    debug: 
-      msg: "{{ ansible_default_ipv4.address }}"
-cat...
+  hosts: all
+  tasks: 
+    - name: show ip address
+      debug: 
+        msg: "{{ ansible_default_ipv4.address }}"
+...
